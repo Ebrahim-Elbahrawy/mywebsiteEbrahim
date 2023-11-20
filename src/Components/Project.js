@@ -16,9 +16,11 @@ function Project({ projectInfo }) {
                 <p>{`(${item.package.join(")-(")})`}</p>
                 <div className="d-flex justify-content-arround ">
                   <Link
-                    to="/"
+                    to={item.vidiolink}
                     title="go to vidio demo in youtube"
                     className="button__link"
+                    target="_blank"  // Use target="_blank" to open the link in a new tab/window
+                    rel="noopener noreferrer" // Add these attributes for security when using target="_blank"
                   >
                     {" "}
                     demo YouTube
