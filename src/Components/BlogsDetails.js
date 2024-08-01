@@ -32,9 +32,9 @@ function BlogsDetails() {
     );
   }
   return (
-    <Container>
+    <Container className="rtl">
       <img src={blogpara.image} alt="" className="blog-image" />
-      <p className="p-2 blog-para">{blogpara.paragraphe}</p>
+      <p className="p-2 blog-para ">{blogpara.paragraphe}</p>
     </Container>
   );
 }

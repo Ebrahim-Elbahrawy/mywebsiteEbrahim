@@ -10,6 +10,9 @@ import {
 import Spinner from "react-bootstrap/Spinner";
 
 function Home() {
+  const fileId = '1SPbrPfryWTFKCPoy7FLtbkZmoLi-g5rB';
+  const fileUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+  const fileName = 'EbrahimElbahrawyResume.pdf';
   const [info, setInfo] = useState({});
   useEffect(() => {
     const get = async () => {
@@ -29,7 +32,12 @@ function Home() {
             </figure>
           </Col>
           <Col>
+          <Col className="d-flex justify-content-between ">
             <h3 className="welcome">Welcome</h3>
+            <a href={fileUrl} download={fileName}>
+            <button  className="button__link ">Download CV</button>
+    </a>
+    </Col>
             <h2>
               <span> I am / </span>
               {info.name}

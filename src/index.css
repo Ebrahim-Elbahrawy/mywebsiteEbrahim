@@ -70,7 +70,10 @@
   opacity: 0.8;
   width: 100%;
 }
-
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
 .button__link {
   text-decoration: none;
   padding: 8px;
